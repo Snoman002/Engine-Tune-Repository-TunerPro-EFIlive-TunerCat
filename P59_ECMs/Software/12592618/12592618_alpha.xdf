@@ -1,0 +1,744 @@
+<!-- Written 04/06/2018 15:56:09 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <deftitle>12592618T</deftitle>
+    <description></description>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="8" sigdigits="0" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x100000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="Calibration Options" />
+    <CATEGORY index="0x1" name="Fuel Parameters" />
+    <CATEGORY index="0x2" name="Transmission Parameters" />
+    <CATEGORY index="0x3" name="System Parameters" />
+    <CATEGORY index="0x4" name="Diagnostic Parameters" />
+    <CATEGORY index="0x5" name="Spark Parameters" />
+    <CATEGORY index="0x6" name="Idle Control Parameters" />
+    <CATEGORY index="0x7" name="Emissions Parameters" />
+    <CATEGORY index="0x8" name="Spark Tables" />
+    <CATEGORY index="0x9" name="Fuel Tables" />
+    <CATEGORY index="0xA" name="Transmission Tables" />
+    <CATEGORY index="0xB" name="Emissions Tables" />
+    <CATEGORY index="0xC" name="System Tables" />
+    <CATEGORY index="0xD" name="Idle Control Tables" />
+    <CATEGORY index="0xE" name="Diagnostic Tables" />
+    <CATEGORY index="0xF" name="Fuel/Air DTC" />
+    <CATEGORY index="0x10" name="Ignition DTC" />
+    <CATEGORY index="0x11" name="Emissions DTC" />
+    <CATEGORY index="0x12" name="Input DTC" />
+    <CATEGORY index="0x13" name="Output DTC" />
+    <CATEGORY index="0x14" name="Transmission DTC" />
+    <CATEGORY index="0x15" name="OS Patches" />
+  </XDFHEADER>
+
+ <XDFTABLE uniqueid="0xF43" flags="0x30">
+    <title>VIN</title>
+    <description>This MAY be the Vehicle Indentification Number (VIN) programmed in the calibration.&#013;&#010;&#013;&#010;*** Do NOT make changes to this parameter, UNLESS the originally dsiplayed values were in proper VIN format (i.e. make certain this is indeed a VIN stored in the PCM) ***</description>
+    <CATEGORYMEM index="0" category="17" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>17</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>2</datatype>
+      <unittype>2</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
+      <LABEL index="10" value="11" />
+      <LABEL index="11" value="12" />
+      <LABEL index="12" value="13" />
+      <LABEL index="13" value="14" />
+      <LABEL index="14" value="15" />
+      <LABEL index="15" value="16" />
+      <LABEL index="16" value="17" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>VIN</units>
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>2</datatype>
+      <unittype>2</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="VIN" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x4021" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>48.000000</min>
+      <max>90.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH col="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH col="2" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" col="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" col="2" equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x2F90" flags="0x30">
+    <title>VIN - possible alternate location</title>
+    <description>This MAY be the Vehicle Indentification Number (VIN) programmed in the calibration.&#013;&#010;&#013;&#010;*** Do NOT make changes to this parameter, UNLESS the originally dsiplayed values were in proper VIN format (i.e. make certain this is indeed a VIN stored in the PCM) ***</description>
+    <CATEGORYMEM index="0" category="17" />
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <indexcount>17</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>2</datatype>
+      <unittype>2</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
+      <LABEL index="10" value="11" />
+      <LABEL index="11" value="12" />
+      <LABEL index="12" value="13" />
+      <LABEL index="13" value="14" />
+      <LABEL index="14" value="15" />
+      <LABEL index="15" value="16" />
+      <LABEL index="16" value="17" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="16" mmedmajorstridebits="-32" mmedminorstridebits="0" />
+      <units>VIN</units>
+      <indexcount>1</indexcount>
+      <outputtype>4</outputtype>
+      <datatype>2</datatype>
+      <unittype>2</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="VIN" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x6021" mmedelementsizebits="8" mmedrowcount="1" mmedcolcount="17" mmedmajorstridebits="0" mmedminorstridebits="0" />
+      <decimalpl>0</decimalpl>
+      <min>48.000000</min>
+      <max>90.000000</max>
+      <outputtype>4</outputtype>
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH col="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH col="2" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" col="1" equation="X">
+        <VAR id="X" />
+      </MATH>
+      <MATH row="1" col="2" equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+
+  <XDFFLAG uniqueid="0x3996">
+    <title>CAT Over-Temp. Diagnostic</title>
+    <CATEGORYMEM index="0" category="1" />
+    <EMBEDDEDDATA mmedaddress="0x8E74" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <mask>0x01</mask>
+  </XDFFLAG>
+  <XDFCONSTANT uniqueid="0xE38" flags="0xC">
+    <title>Fan 1 On Coolant Temp.</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA5E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7957" flags="0xC">
+    <title>Fan 1 On Coolant Temp - A/C On</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA62" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5613" flags="0xC">
+    <title>Fan 1 Off Coolant Temp.</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA60" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x448E" flags="0xC">
+    <title>Fan 1 Run-on Coolant Temp.</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA64" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x28A2" flags="0xC">
+    <title>Fan 1 Keyoff On Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA8C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>sec.</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x57EA" flags="0xC">
+    <title>Fan 1 On A/C Pressure</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA5A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Psi</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>500.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.1953125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7E91" flags="0xC">
+    <title>Fan 1 Off A/C Pressure</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA5C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Psi</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>500.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.1953125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x399E" flags="0xC">
+    <title>Fan 1 Off Vehicle Speed - A/C On</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA6C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>MPH</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>256.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0078125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5E39" flags="0xC">
+    <title>Fan 1 On Vehicle Speed - A/C On</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA6E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>MPH</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>256.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0078125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x11B" flags="0xC">
+    <title>Fan 1 On Minimum Engine Run Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA66" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec.</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0xAD2" flags="0xC">
+    <title>Minimum Fan 1 On Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA72" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x94F" flags="0xC">
+    <title>Minimum Fan 1 Off Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA74" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5323" flags="0xC">
+    <title>Fan 1 Turn On Delay Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA84" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x25CE" flags="0xC">
+    <title>Fan 1 Turn Off Delay Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA86" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4DFA" flags="0xC">
+    <title>Fan 1 Off Delay After Fan 2 Off</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA76" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x489" flags="0xC">
+    <title>Fan 2 On Coolant Temp.</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA7E" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x343C" flags="0xC">
+    <title>Fan 2 Off Coolant Temp.</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedtypeflags="0x01" mmedaddress="0x1FA80" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Deg. C</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>140.000000</rangehigh>
+    <rangelow>-40.000000</rangelow>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.0390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2D7E" flags="0xC">
+    <title>Fan 2 On A/C Pressure</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA7A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Psi</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>500.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.1953125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x5484" flags="0xC">
+    <title>Fan 2 Off A/C Pressure</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA7C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Psi</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>500.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.1953125">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4FD9" flags="0xC">
+    <title>Minimum Fan 2 On Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA82" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x335C" flags="0xC">
+    <title>Fan 2 On Delay Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA78" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x61AA" flags="0xC">
+    <title>Fan 2 Turn On Delay Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA88" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <rangehigh>410.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x67">
+    <title>Fan 2 Turn Off Delay Time</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA8A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Sec</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*0.00625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x300D" flags="0xC">
+    <title>Fans Off Vehicle Speed - A/C On</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FA6A" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>MPH</units>
+    <decimalpl>1</decimalpl>
+    <rangehigh>256.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x29E5" flags="0xC">
+    <title>Fan Type (0=2 Fans, 1=Aux Fan, 2= None)</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1F76E" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>0</decimalpl>
+    <rangehigh>2.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x6000" flags="0xC">
+    <title>Speedometer Input Pulses Per Revolution</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x19162" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Pulses</units>
+    <rangehigh>256.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.00390625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x7912" flags="0xC">
+    <title>Speed Pulses Per Mile</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FFBC" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>PPM</units>
+    <decimalpl>0</decimalpl>
+    <rangehigh>255996.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*3.90625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x304A" flags="0xC">
+    <title>Speedometer Input Pulse per Mile</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FFC0" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>PPM</units>
+    <decimalpl>0</decimalpl>
+    <rangehigh>255996.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*3.90625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x2755">
+    <title>Secondary Speed Pulses Per Mile (ABS)</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FFC2" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>PPM</units>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*3.90625">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x32CF" flags="0xC">
+    <title>Final Drive Ratio</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1FFCC" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Ratio</units>
+    <rangehigh>16.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.00024414">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x4E37" flags="0xC">
+    <title>Trans Output Shaft Revs Per Mile</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1CF62" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <units>Rev/Mi</units>
+    <rangehigh>3840.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X*.05859372">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFFLAG uniqueid="0x190C">
+    <title>VATS Fail-Enabled Option</title>
+    <CATEGORYMEM index="0" category="1" />
+    <EMBEDDEDDATA mmedaddress="0x1F77A" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <mask>0x01</mask>
+  </XDFFLAG>
+  <XDFCONSTANT uniqueid="0x43ED" flags="0xC">
+    <title>VATS (0=Serial, 1=PWM, 2=None)</title>
+    <CATEGORYMEM index="0" category="4" />
+    <EMBEDDEDDATA mmedaddress="0x1F779" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>0</decimalpl>
+    <rangehigh>2.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFFLAG uniqueid="0xEB">
+    <title>VATS Fuel Enable Circuit (P1630)</title>
+    <CATEGORYMEM index="0" category="19" />
+    <EMBEDDEDDATA mmedaddress="0x185AE" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <mask>0x01</mask>
+  </XDFFLAG>
+  <XDFCONSTANT uniqueid="0x3260" flags="0xC">
+    <title>VATS Fuel Enable Circuit (P1630) Action</title>
+    <CATEGORYMEM index="0" category="19" />
+    <EMBEDDEDDATA mmedaddress="" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>0</decimalpl>
+    <rangehigh>3.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFFLAG uniqueid="0x2A20">
+    <title>VATS Learn Mode Active (P1631)</title>
+    <CATEGORYMEM index="0" category="19" />
+    <EMBEDDEDDATA mmedaddress="0x185AF" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <mask>0x01</mask>
+  </XDFFLAG>
+  <XDFCONSTANT uniqueid="0xBCB" flags="0xC">
+    <title>VATS Learn Mode Active (P1631) Action</title>
+    <CATEGORYMEM index="0" category="19" />
+    <EMBEDDEDDATA mmedaddress="" mmedelementsizebits="8" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <decimalpl>0</decimalpl>
+    <rangehigh>3.000000</rangehigh>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+<XDFCHECKSUM uniqueid="0x47C4">
+    <title>1 - Operating System Checksum</title>
+    <REGION>
+      <pluginmoduleid>9a53f579-d1c9-40c6-8691-7a54fa789d3b</pluginmoduleid>
+      <datastart>0x0</datastart>
+      <dataend>0xFFFFD</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x500</storeaddress>
+      <calculationmethod>0x0</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x7083">
+    <title>2 - Engine Calibration Checksum</title>
+    <REGION>
+      <datastart>0x8002</datastart>
+      <dataend>0x15FEF</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x8000</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x77F8">
+    <title>3 - Engine Diagnostics Checksum</title>
+    <REGION>
+      <datastart>0x15FF2</datastart>
+      <dataend>0x1912F</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x15FF0</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0xD03">
+    <title>4 - Transmission Calibration Checksum</title>
+    <REGION>
+      <datastart>0x19132</datastart>
+      <dataend>0x1D3AF</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x19130</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x5FE1">
+    <title>5 - Transmission Diagnostics Checksum</title>
+    <REGION>
+      <datastart>0x1D3B2</datastart>
+      <dataend>0x1DCAF</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x1D3B0</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x7279">
+    <title>6 - Fuel System Checksum</title>
+    <REGION>
+      <datastart>0x1DCB2</datastart>
+      <dataend>0x1F6AF</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x1DCB0</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x143C">
+    <title>7 - System Checksum</title>
+    <REGION>
+      <datastart>0x1F6B2</datastart>
+      <dataend>0x1FF9F</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x1F6B0</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+<XDFCHECKSUM uniqueid="0x6AED">
+    <title>8 - Speedometer Checksum</title>
+    <REGION>
+      <datastart>0x1FFA2</datastart>
+      <dataend>0x1FFEF</dataend>
+      <datasizebits>0x10</datasizebits>
+      <storeaddress>0x1FFA0</storeaddress>
+      <calculationmethod>0x1</calculationmethod>
+    </REGION>
+</XDFCHECKSUM>
+</XDFFORMAT>
