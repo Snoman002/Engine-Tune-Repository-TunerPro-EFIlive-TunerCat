@@ -8,14 +8,14 @@ The owner of this respositor take no credit in the generation of any of these fi
 
 
 Repository structure is defined below.
-Manufacture
 
--> ECM Generation
-- -> Hardware Information (repo for HW specifics)/Software Information (tuning files)
-- - -> (software) Applicable ECU section
-- - - -> Folder for each different OSID.
-- - - - -> XDF/ADX stored at top level; Each BIN is given a folder named "OSID_VIN"
-- - - - - -> Within each VIN folder is the BIN file and a readme metacard with searchable vehicle details (BIN details pulled from "PCMBINBuilder" (joukoy https://github.com/joukoy/PCMBinBuilder) and VIN details from https://vpic.nhtsa.dot.gov/decoder/ 
+- ->Manufacture
+- - -> ECM Generation
+- - - -> Hardware Information (repo for HW specifics)/Software Information (tuning files)
+- - - - -> (software) Applicable ECU section
+- - - - - -> Folder for each different OSID.
+- - - - - - -> XDF/ADX stored at top level; Each BIN is given a folder named "OSID_VIN"
+- - - - - - - -> Within each VIN folder is the BIN file and a readme metacard with searchable vehicle details (BIN details pulled from "PCMBINBuilder" (joukoy https://github.com/joukoy/PCMBinBuilder) and VIN details from https://vpic.nhtsa.dot.gov/decoder/ 
 
 
 Various Tuning efforts
