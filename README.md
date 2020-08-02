@@ -3,9 +3,13 @@
 This is an unofficial fork of the LS_Based_Engine_Repository created by BoredTruckOwner
 https://github.com/BoredTruckOwner/LS_Based_Engine_Repository
 
+
 The following repository is designed to house various engine management configuration files. The current data held is more for Tuner Pro (XDF and BIN) however this repository need not only work for that software.
 
 Any and all files in this repository are very much use at your own risk. The validity of these files cannot be verified.
+
+
+To controbute to this repository consider creating a branch or fork in Github and adding modifying the files you wish to work on.  If you have new bin files either add them to the appropriate section, or create an issue and attach the file.
 
 The owner of this respositor take no credit in the generation of any of these files, that has been done by the hardwork of many many others. If you upload a file please identify yourself in the metadata card, if you found the file online please credit the author if known.
 
