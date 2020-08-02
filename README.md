@@ -1,5 +1,8 @@
 # TunerPro (and other) Engine Tune Repository
 
+This is an unofficial fork of the LS_Based_Engine_Repository created by BoredTruckOwner
+https://github.com/BoredTruckOwner/LS_Based_Engine_Repository
+
 The following repository is designed to house various engine management configuration files. The current data held is more for Tuner Pro (XDF and BIN) however this repository need not only work for that software.
 
 Any and all files in this repository are very much use at your own risk. The validity of these files cannot be verified.
