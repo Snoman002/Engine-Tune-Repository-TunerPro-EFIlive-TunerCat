@@ -1,4 +1,4 @@
-This repository is for XDF and BIN files related to the P59 family of ECMs
+This repository is for XDF and BIN files related to the XXX family of ECMs
 
 Folders represent different Operating Systems available on the family of controllers.
 
