@@ -1,4 +1,4 @@
-This section of the repo is for the XXXXXXXX OSID
+This section of the repo is for the 12579405 OSID
 
 New bin files for the OSID can be added by copying an existing folder and editing the pertinent details.
 
