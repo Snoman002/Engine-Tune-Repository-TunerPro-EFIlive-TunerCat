@@ -1,0 +1,3013 @@
+<ADXFORMAT version="1.01" />
+<!-- Written Tue Jul 15 20:57:27 2014 @ ecmspy.com -->
+
+<ADXVALUE id="RPM" idhash="0XCD0CD1DB" title="RPM">
+    <desc>Engine Speed: Engine Speed</desc>
+    <flags>0x00000002</flags>
+    <units>RPM</units>
+    <packetoffset>0xb</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="12000.00000" />
+    <alarms low="0.00000" high="12000.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Load" idhash="0XAA60B379" title="Load">
+    <desc>Load Rear: Load for the rear cylinder 8-bit resolution)</desc>
+    <units>Percent * 2.55</units>
+    <packetoffset>0x1b</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Seconds" idhash="0X3A62DE4F" title="Seconds">
+    <desc>Seconds: Number of seconds since engine startup</desc>
+    <flags>0x00000002</flags>
+    <units>Seconds</units>
+    <packetoffset>0x9</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="65535.00000" />
+    <alarms low="0.00000" high="65535.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="TPP" idhash="0XCD4443DB" title="TPP">
+    <desc>Throttle Percentage: Throttle postion, percentage</desc>
+    <units>8-bit</units>
+    <packetoffset>0x1b</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="100.00003" />
+    <alarms low="0.00000" high="100.00003" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.392157 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="TPD" idhash="0XCD44519B" title="TPD">
+    <desc>Throttle Position Degrees: Throttle position, degree</desc>
+    <flags>0x00000002</flags>
+    <units>Degrees</units>
+    <packetoffset>0x19</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="900.00000" />
+    <alarms low="0.00000" high="900.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="TPS 10Bit" idhash="0XA4DC662D" title="TPS 10Bit">
+    <desc>TPS 10Bit: Throttle position sensor unscaled input 10-bit resolution)</desc>
+    <flags>0x00000002</flags>
+    <units>10-bit ADC</units>
+    <packetoffset>0x5a</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1023.00000" />
+    <alarms low="0.00000" high="1023.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="TPS Voltg." idhash="0X559A9A55" title="TPS Voltg.">
+    <desc>TPS Voltage: Throttle position sensor voltage</desc>
+    <flags>0x00000002</flags>
+    <units>Volt</units>
+    <packetoffset>0x5a</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="5.00000" />
+    <alarms low="0.00000" high="5.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.004888 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="MAT" idhash="0XCD7B4E5B" title="MAT">
+    <desc>Air Temperature: Air temperature, centigrade</desc>
+    <flags>0x00000002</flags>
+    <units>Degree C</units>
+    <packetoffset>0x20</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-40.00000" high="368.00000" />
+    <alarms low="-40.00000" high="368.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 0.100000 ) + -40.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="MAT_F" idhash="0XED3AA975" title="MAT_F">
+    <desc>Air Temperature Fahrenheit: Air temperature, Fahrenheit</desc>
+    <flags>0x00000002</flags>
+    <units>Fahrenheit</units>
+    <packetoffset>0x20</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-40.00000" high="694.40000" />
+    <alarms low="-40.00000" high="694.40000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 0.180000 ) + -40.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="BAS Voltg." idhash="0X547E1A55" title="BAS Voltg.">
+    <desc>BAS Voltage: Bank angle sensor input  voltage</desc>
+    <flags>0x00000002</flags>
+    <units>Volt</units>
+    <packetoffset>0x41</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="5.00000" />
+    <alarms low="0.00000" high="5.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.004888 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Batt. Voltg." idhash="0X4F3D1624" title="Batt. Voltg.">
+    <desc>Battery Voltage: Battery voltage</desc>
+    <flags>0x00000002</flags>
+    <units>Volts</units>
+    <packetoffset>0x1c</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="2000.00000" />
+    <alarms low="0.00000" high="2000.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.010000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CLT" idhash="0XCD6D5A5B" title="CLT">
+    <desc>Engine Temperature: Engine temperature, centigrade</desc>
+    <flags>0x00000002</flags>
+    <units>Degree C</units>
+    <packetoffset>0x1e</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-40.00000" high="368.00000" />
+    <alarms low="-40.00000" high="368.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 0.100000 ) + -40.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CLT_F" idhash="0XB56AA975" title="CLT_F">
+    <desc>Engine Temperature Fahrenheit: Engine temperature, Fahrenheit</desc>
+    <flags>0x00000002</flags>
+    <units>Fahrenheit</units>
+    <packetoffset>0x1e</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="-40.00000" high="694.40000" />
+    <alarms low="-40.00000" high="694.40000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 0.180000 ) + -40.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="O2" idhash="0XDE68C8B0" title="O2">
+    <desc>O2 Voltage Rear: Exhaust O2 sensor voltage for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Volt</units>
+    <packetoffset>0x22</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1.24633" />
+    <alarms low="0.00000" high="1.24633" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.004888 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Accel Corr." idhash="0XB21705FE" title="Accel Corr.">
+    <desc>Acceleration Correction: Acceleration condition fuel enrichment</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x2a</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="AFV" idhash="0XCD13AB5B" title="AFV">
+    <desc>AFV Rear: Adaptive fuel value for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x34</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IAT Corr." idhash="0X52854C6D" title="IAT Corr.">
+    <desc>Air Temp Correction: Air density temperature dependent) compensation</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x28</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Decel Corr." idhash="0XDA2F05FE" title="Decel Corr.">
+    <desc>Deceleration Correction: Deceleration condition fuel adjustment</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x2c</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="EGO Corr." idhash="0X529AECBD" title="EGO Corr.">
+    <desc>EGO Correction: Exhaust gas O2 fuel adjustment for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x36</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="250.00000" />
+    <alarms low="0.00000" high="250.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="WUE" idhash="0XCD04195B" title="WUE">
+    <desc>Engine Temp Correction: Warmup enrichment</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x26</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Idle Corr." idhash="0XCAE7120D" title="Idle Corr.">
+    <desc>Idle Correction: Idle fuel adjustment</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x30</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="OL Corr." idhash="0X9646CB5F" title="OL Corr.">
+    <desc>Open Loop Correction: Open loop default correction</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x32</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="WOT Corr." idhash="0X529D9E6D" title="WOT Corr.">
+    <desc>WOT Correction: Wide open throttle fuel enrichment</desc>
+    <flags>0x00000002</flags>
+    <units>Percent</units>
+    <packetoffset>0x2e</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="6553.50000" />
+    <alarms low="0.00000" high="6553.50000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.100000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="pw1" idhash="0XCD5DEF7B" title="pw1">
+    <desc>Fuel Pulsewidth Front: Injector pulsewidth for the front cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Milliseconds</units>
+    <packetoffset>0x15</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="87.16155" />
+    <alarms low="0.00000" high="87.16155" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.001330 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="pw2" idhash="0XCD5DF5DB" title="pw2">
+    <desc>Fuel Pulsewidth Rear: Injector pulsewidth for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Milliseconds</units>
+    <packetoffset>0x17</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="87.16155" />
+    <alarms low="0.00000" high="87.16155" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.001330 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="veCurr1_RAW" idhash="0X1822B562" title="veCurr1_RAW">
+    <desc>Raw Table Fuel, Front: Fuel map raw value for the front cylinder interpolated, unscaled)</desc>
+    <flags>0x00000002</flags>
+    <units>fuel</units>
+    <packetoffset>0x11</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="65535.00000" />
+    <alarms low="0.00000" high="65535.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="veCurr2_RAW" idhash="0XB222B563" title="veCurr2_RAW">
+    <desc>Raw Table Fuel, Rear: Fuel map raw value for the rear cylinder interpolated, unscaled)</desc>
+    <flags>0x00000002</flags>
+    <units>fuel</units>
+    <packetoffset>0x13</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="65535.00000" />
+    <alarms low="0.00000" high="65535.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="spark1" idhash="0X9AE25FC0" title="spark1">
+    <desc>Spark Advance Front: Spark advance for the front cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Degrees</units>
+    <packetoffset>0xd</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="163.83750" />
+    <alarms low="0.00000" high="163.83750" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.002500 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="spark2" idhash="0X9AE24560" title="spark2">
+    <desc>Spark Advance Rear: Spark advance for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>Degrees</units>
+    <packetoffset>0xf</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="163.83750" />
+    <alarms low="0.00000" high="163.83750" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.002500 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="veCurr1" idhash="0X88502177" title="veCurr1">
+    <desc>Table Fuel, Front: Fuel map value for the front cylinder interpolated, scaled to fuel map range)</desc>
+    <flags>0x00000002</flags>
+    <units>fuel</units>
+    <packetoffset>0x11</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1743.23100" />
+    <alarms low="0.00000" high="1743.23100" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.026666 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="veCurr2" idhash="0X88503BD7" title="veCurr2">
+    <desc>Table Fuel, Rear: Fuel map value for the rear cylinder interpolated, scaled to fuel map range)</desc>
+    <flags>0x00000002</flags>
+    <units>fuel</units>
+    <packetoffset>0x13</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1743.23100" />
+    <alarms low="0.00000" high="1743.23100" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.026666 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IAT ADC" idhash="0XE32924AC" title="IAT ADC">
+    <desc>Air Temperature Sensor: Manifold air temperature sensor unscaled input</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x5f</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="BAS ADC" idhash="0X1329254C" title="BAS ADC">
+    <desc>Bank Angle Sensor: Bank angle sensor unscaled input</desc>
+    <flags>0x00000002</flags>
+    <units>10-bit ADC</units>
+    <packetoffset>0x41</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1023.00000" />
+    <alarms low="0.00000" high="1023.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Batt. ADC" idhash="0X0BCB13CA" title="Batt. ADC">
+    <desc>Battery Feedback: Battery voltage unscaled input</desc>
+    <flags>0x00000002</flags>
+    <units>10-bit ADC</units>
+    <packetoffset>0x5c</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="1023.00000" />
+    <alarms low="0.00000" high="1023.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Coil1 ADC" idhash="0X63CE1190" title="Coil1 ADC">
+    <desc>Coil Feedback Front: Front ignition coil unscaled feedback signal</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x56</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Coil2 ADC" idhash="0XC9CE1191" title="Coil2 ADC">
+    <desc>Coil Feedback Rear: Rear ignition coil unscaled feedback signal</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x57</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ETS ADC" idhash="0X1329237E" title="ETS ADC">
+    <desc>Engine Temperature Sensor: Engine temperature sensor for the rear cylinder unscaled signal</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x5e</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="F. Pp ADC" idhash="0X2D981466" title="F. Pp ADC">
+    <desc>Fuel Pump Feedback: Fuel pump unscaled feedback singal</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x60</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Inj1 ADC" idhash="0X270F3ECA" title="Inj1 ADC">
+    <desc>Injector Feedback Front: Injector unscaled feedback signal for the front cylinder</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x58</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Inj2 ADC" idhash="0X8D0F3ECB" title="Inj2 ADC">
+    <desc>Injector Feedback Rear: Injector unscaled feedback signal for the rear cylinder</desc>
+    <units>8-bit ADC</units>
+    <packetoffset>0x59</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="O2 ADC" idhash="0X8D98144C" title="O2 ADC">
+    <desc>O2 Sensor Rear: Exhaust gas O2 sensor unscaled input for the rear cylinder</desc>
+    <flags>0x00000002</flags>
+    <units>10-bit ADC</units>
+    <packetoffset>0x22</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags0" idhash="0X46BEDD86" title="Flags0">
+    <desc>Flags Byte 0: Flags, Byte 0</desc>
+    <units />
+    <packetoffset>0x38</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags1" idhash="0X46BED3C6" title="Flags1">
+    <desc>Flags Byte 1: Flags, Byte 1</desc>
+    <units />
+    <packetoffset>0x39</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags2" idhash="0X46BEC966" title="Flags2">
+    <desc>Flags Byte 2: Flags, Byte 2</desc>
+    <units />
+    <packetoffset>0x3a</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags3" idhash="0X46BED666" title="Flags3">
+    <desc>Flags Byte 3: Flags, Byte 3</desc>
+    <units />
+    <packetoffset>0x3b</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags4" idhash="0X46BED466" title="Flags4">
+    <desc>Flags Byte 4: Flags, Byte 4</desc>
+    <units />
+    <packetoffset>0x3c</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags5" idhash="0X46BEC306" title="Flags5">
+    <desc>Flags Byte 5: Flags, Byte 5</desc>
+    <units />
+    <packetoffset>0x3d</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Flags6" idhash="0X46BEC0A6" title="Flags6">
+    <desc>Flags Byte 6: Flags, Byte 6</desc>
+    <units />
+    <packetoffset>0x3e</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CDiag0" idhash="0X08F07596" title="CDiag0">
+    <desc>Current Errors Byte 0: Current trouble codes, byte 1</desc>
+    <units />
+    <packetoffset>0x43</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CDiag1" idhash="0X08F07BD6" title="CDiag1">
+    <desc>Current Errors Byte 1: Current trouble codes, byte 2</desc>
+    <units />
+    <packetoffset>0x44</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CDiag2" idhash="0X08F06176" title="CDiag2">
+    <desc>Current Errors Byte 2: Current trouble codes, byte 3</desc>
+    <units />
+    <packetoffset>0x45</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="CDiag3" idhash="0X08F07E76" title="CDiag3">
+    <desc>Current Errors Byte 3: Current trouble codes, byte 4</desc>
+    <units />
+    <packetoffset>0x46</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="HDiag0" idhash="0X88F075A7" title="HDiag0">
+    <desc>Stored Errors Byte 0: Stored diagnostic trouble codes, byte 1</desc>
+    <units />
+    <packetoffset>0x4b</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="HDiag1" idhash="0X88F07BE7" title="HDiag1">
+    <desc>Stored Errors Byte 1: Stored diagnostic trouble codes, byte 2</desc>
+    <units />
+    <packetoffset>0x4c</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="HDiag2" idhash="0X88F06147" title="HDiag2">
+    <desc>Stored Errors Byte 2: Stored diagnostic trouble codes, byte 3</desc>
+    <units />
+    <packetoffset>0x4d</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="HDiag3" idhash="0X88F07E47" title="HDiag3">
+    <desc>Stored Errors Byte 3: Stored diagnostic trouble codes, byte 4</desc>
+    <units />
+    <packetoffset>0x4e</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="MilliSec" idhash="0X4265EF6B" title="MilliSec">
+    <desc>10 Millisecond Time: 10 milliseconds timer</desc>
+    <units>Seconds</units>
+    <packetoffset>0x8</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="100.00000" />
+    <alarms low="0.00000" high="100.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.010000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="DIn" idhash="0XCD79E11B" title="DIn">
+    <desc>Digital Input: Digital input status</desc>
+    <units />
+    <packetoffset>0x55</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="DOut" idhash="0XAF40A919" title="DOut">
+    <desc>Digital Output 1: Digital output 1 bitvalues</desc>
+    <units />
+    <packetoffset>0x54</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="ETS Voltg." idhash="0X57671A55" title="ETS Voltg.">
+    <desc>ETS Voltage: Engine temperature sensor for the rear cylinder voltage</desc>
+    <units>Volt</units>
+    <packetoffset>0x5e</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="5.00000" />
+    <alarms low="0.00000" high="5.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.019608 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="IAT Voltg." idhash="0X548E6255" title="IAT Voltg.">
+    <desc>IAT Voltage: Manifold air temperature sensor voltage</desc>
+    <units>Volt</units>
+    <packetoffset>0x5f</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="5.00000" />
+    <alarms low="0.00000" high="5.00000" />
+    <digcount>3</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="( X * 0.019608 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="Rides" idhash="0X3E1A72F4" title="Rides">
+    <desc>Rides: Number of rides since trouble code set</desc>
+    <units>Rides</units>
+    <packetoffset>0x53</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXVALUE id="SysConfig" idhash="0XC8904672" title="SysConfig">
+    <desc>System Configuration: System configuration value</desc>
+    <units />
+    <packetoffset>0x7</packetoffset>
+    <sizeinbits>8</sizeinbits>
+    <range low="0.00000" high="255.00000" />
+    <alarms low="0.00000" high="255.00000" />
+    <digcount>1</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="( X * 1.000000 ) + 0.000000">
+        <VAR varID="X" type="native" />
+    </MATH>
+</ADXVALUE>
+
+<ADXMACRO id="MACROECMTYPE" idhash="0x90F6C13A" title="Get ECM Type" repeatcount="1">
+    <desc>DDFI Stock/P&amp;A - Get ECM Type from ECM</desc>
+    <NODE commandID="ECMTYPECOMMAND" repeatcount="1" />
+    <NODE commandID="READECMTYPE" repeatcount="1" />
+</ADXMACRO>
+
+<ADXMACRO id="MACRORTDATA" idhash="0x3CF01A79" title="Get RT Data" repeatcount="1">
+    <desc>DDFI Stock/P&amp;A - Get Runtime Data from ECM</desc>
+    <NODE commandID="RTDATACOMMAND" repeatcount="1" />
+    <NODE commandID="READRTDATA" repeatcount="1" />
+</ADXMACRO>
+<ADXCSENDCOMMAND id="ECMTYPECOMMAND" idhash="0xB1C8AC56" title="ECM Type Command">
+    <desc>DDFI Stock/P&amp;A ECM - ECM Type Command</desc>
+    <bytestring size="0x9">0x01 0x00 0x42 0x02 0xFF 0x02 0x56 0x03 0xE8 </bytestring>
+</ADXCSENDCOMMAND>
+
+<ADXCSENDCOMMAND id="RTDATACOMMAND" idhash="0xFA588533" title="RT Data Command">
+    <bytestring size="0x9">0x01 0x00 0x42 0x02 0xFF 0x02 0x43 0x03 0xFD </bytestring>
+</ADXCSENDCOMMAND>
+<ADXCLISTENPACKET id="READECMTYPE" idhash="0xF5EC4758" title="Read ECM Type" flags="0x00000005">
+    <desc>DDFI  - Read ECM Type</desc>
+    <listentimeout>1000</listentimeout>
+    <packetbodylength>26</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>26</packetsize>
+    <headerstring size="0"></headerstring>
+    <footerstring size="0"></footerstring>
+</ADXCLISTENPACKET>
+
+<ADXCLISTENPACKET id="READRTDATA" idhash="0x2FD8CE4A" title="Read Runtime Data" flags="0x00000005">
+    <desc>DDFi - Read Runtime Data</desc>
+    <listentimeout>1000</listentimeout>
+    <packetbodylength>100</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>100</packetsize>
+    <headerstring size="0"></headerstring>
+    <footerstring size="0"></footerstring>
+</ADXCLISTENPACKET>
+
+<ADXLISTVIEW id="all_vars_name" idhash="0x9D1586F3" title="All Values (name)">
+    <desc>All Values Ordered By Name</desc>
+    <entrycount>69</entrycount>
+     <!-- value "accel corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XB21705FE" />
+     <!-- value "afv" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD13AB5B" />
+     <!-- value "bas adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X1329254C" />
+     <!-- value "bas voltg." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X547E1A55" />
+     <!-- value "batt. adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X0BCB13CA" />
+     <!-- value "batt. voltg." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X4F3D1624" />
+     <!-- value "cdiag0" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07596" />
+     <!-- value "cdiag1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07BD6" />
+     <!-- value "cdiag2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F06176" />
+     <!-- value "cdiag3" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07E76" />
+     <!-- value "clt" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD6D5A5B" />
+     <!-- value "clt_f" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XB56AA975" />
+     <!-- value "coil1 adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X63CE1190" />
+     <!-- value "coil2 adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XC9CE1191" />
+     <!-- value "decel corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XDA2F05FE" />
+     <!-- value "din" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD79E11B" />
+     <!-- value "dout" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XAF40A919" />
+     <!-- value "ego corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X529AECBD" />
+     <!-- value "ets adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X1329237E" />
+     <!-- value "ets voltg." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X57671A55" />
+     <!-- value "f. pp adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X2D981466" />
+     <!-- value "flags0" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEDD86" />
+     <!-- value "flags1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED3C6" />
+     <!-- value "flags2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC966" />
+     <!-- value "flags3" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED666" />
+     <!-- value "flags4" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED466" />
+     <!-- value "flags5" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC306" />
+     <!-- value "flags6" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC0A6" />
+     <!-- value "hdiag0" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F075A7" />
+     <!-- value "hdiag1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07BE7" />
+     <!-- value "hdiag2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F06147" />
+     <!-- value "hdiag3" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07E47" />
+     <!-- value "iat adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XE32924AC" />
+     <!-- value "iat corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X52854C6D" />
+     <!-- value "iat voltg." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X548E6255" />
+     <!-- value "idle corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCAE7120D" />
+     <!-- value "inj1 adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X270F3ECA" />
+     <!-- value "inj2 adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X8D0F3ECB" />
+     <!-- value "load" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XAA60B379" />
+     <!-- value "mat" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD7B4E5B" />
+     <!-- value "mat_f" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XED3AA975" />
+     <!-- value "millisec" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X4265EF6B" />
+     <!-- value "o2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XDE68C8B0" />
+     <!-- value "o2 adc" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X8D98144C" />
+     <!-- value "ol corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X9646CB5F" />
+     <!-- value "pw1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD5DEF7B" />
+     <!-- value "pw2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD5DF5DB" />
+     <!-- value "rides" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X3E1A72F4" />
+     <!-- value "rpm" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD0CD1DB" />
+     <!-- value "seconds" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X3A62DE4F" />
+     <!-- value "spark1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X9AE25FC0" />
+     <!-- value "spark2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X9AE24560" />
+     <!-- value "sysconfig" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XC8904672" />
+     <!-- value "tpd" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD44519B" />
+     <!-- value "tpp" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD4443DB" />
+     <!-- value "tps 10bit" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XA4DC662D" />
+     <!-- value "tps voltg." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X559A9A55" />
+     <!-- value "vecurr1" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88502177" />
+     <!-- value "vecurr1_raw" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X1822B562" />
+     <!-- value "vecurr2" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X88503BD7" />
+     <!-- value "vecurr2_raw" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XB222B563" />
+     <!-- value "wot corr." -->
+    <ADXLVENTRY entrytype="0" itemidhash="0X529D9E6D" />
+     <!-- value "wue" -->
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD04195B" />
+</ADXLISTVIEW>
+
+<ADXLISTVIEW id="all_vars_offset" idhash="0x9D1586F3" title="All Values (offset)">
+    <desc>All Values Ordered By Offset</desc>
+    <entrycount>70</entrycount>
+    <ADXLVENTRY entrytype="0" itemidhash="0XC8904672" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X4265EF6B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X3A62DE4F" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD0CD1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X9AE25FC0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X9AE24560" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X1822B562" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88502177" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XB222B563" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88503BD7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD5DEF7B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD5DF5DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD44519B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XAA60B379" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD4443DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X4F3D1624" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD6D5A5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XB56AA975" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD7B4E5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XED3AA975" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X8D98144C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XDE68C8B0" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD04195B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X52854C6D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XB21705FE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XDA2F05FE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X529D9E6D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCAE7120D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X9646CB5F" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD13AB5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X529AECBD" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEDD86" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED3C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC966" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED666" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED466" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC306" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC0A6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X1329254C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X547E1A55" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07596" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07BD6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F06176" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07E76" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F075A7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07BE7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F06147" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07E47" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X3E1A72F4" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XAF40A919" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD79E11B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X63CE1190" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XC9CE1191" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X270F3ECA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X8D0F3ECB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XA4DC662D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X559A9A55" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X0BCB13CA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X1329237E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X57671A55" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XE32924AC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X548E6255" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X2D981466" />
+</ADXLISTVIEW>
+
+<ADXBITMASK id="CDiag0Bit0" idhash="0X5ACEC027" title="0: ETS Voltg.">
+    <desc>Bit 0: Engine Temperature Sensor Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit1" idhash="0X5ACECE67" title="1: ETS Voltg.">
+    <desc>Bit 1: Engine Temperature Sensor Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit2" idhash="0X5ACED4C7" title="2: O2 Rear">
+    <desc>Bit 2: O2 Rear Sensor Always Rich</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Rich Only</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit3" idhash="0X5ACECBC7" title="3: O2 Rear">
+    <desc>Bit 3: O2 Rear Sensor Always Lean</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Lean Only</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit4" idhash="0X5ACEC9C7" title="4: O2 Rear">
+    <desc>Bit 4: O2 Rear Sensor Inactive</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Inactive</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit5" idhash="0X5ACEDEA7" title="5: TPS Voltg.">
+    <desc>Bit 5: TPS Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit6" idhash="0X5ACEDD07" title="6: TPS Voltg.">
+    <desc>Bit 6: TPS Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag0Bit7" idhash="0X5ACEC747" title="7: Fan 1 Voltg.">
+    <desc>Bit 7: Fan Feedback Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x43</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit0" idhash="0XBECEC027" title="0: Coil 1">
+    <desc>Bit 0: Coil 1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit1" idhash="0XBECECE67" title="1: Coil 1">
+    <desc>Bit 1: Coil 1 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit2" idhash="0XBECED4C7" title="2: Inj. 1">
+    <desc>Bit 2: Injector 1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit3" idhash="0XBECECBC7" title="3: Inj. 1">
+    <desc>Bit 3: Injector 1 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit4" idhash="0XBECEC9C7" title="4: Batt. Voltg.">
+    <desc>Bit 4: Battery Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit5" idhash="0XBECEDEA7" title="5: Batt. Voltg.">
+    <desc>Bit 5: Battery Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit6" idhash="0XBECEDD07" title="6: IAT Voltg.">
+    <desc>Bit 6: Air Temp. Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag1Bit7" idhash="0XBECEC747" title="7: IAT Voltg.">
+    <desc>Bit 7: Air Temp. Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x44</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit0" idhash="0X14CEC026" title="0: Tacho.">
+    <desc>Bit 0: Tachometer (Output) Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit1" idhash="0X14CECE66" title="1: Tacho.">
+    <desc>Bit 1: Tachometer (Output) Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit2" idhash="0X14CED4C6" title="2: Fuelpump">
+    <desc>Bit 2: Fuel Pump Feedback Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit3" idhash="0X14CECBC6" title="3: Fuelpump">
+    <desc>Bit 3: Fuel Pump Feedback Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit4" idhash="0X14CEC9C6" title="4: Inj. 2">
+    <desc>Bit 4: Injector 1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit5" idhash="0X14CEDEA6" title="5: Inj. 2">
+    <desc>Bit 5: Injector 2 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit6" idhash="0X14CEDD06" title="6: Coil 2">
+    <desc>Bit 6: Coil 2 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag2Bit7" idhash="0X14CEC746" title="7: Coil 2">
+    <desc>Bit 7: Coil 2 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x45</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit0" idhash="0XE4CEC027" title="0: Sync">
+    <desc>Bit 0: Sync Failure</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit1" idhash="0XE4CECE67" title="1: ADC">
+    <desc>Bit 1: ECM Analog-Digital Conversion Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit2" idhash="0XE4CED4C7" title="2: EEPROM">
+    <desc>Bit 2: ECM EEPROM Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit3" idhash="0XE4CECBC7" title="3: Flash">
+    <desc>Bit 3: ECM Flash Memory Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit4" idhash="0XE4CEC9C7" title="4: RAM">
+    <desc>Bit 4: ECM AM Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit5" idhash="0XE4CEDEA7" title="5: Fan 1 Voltg.">
+    <desc>Bit 5: Fan Feedback Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit6" idhash="0XE4CEDD07" title="6: BAS Voltg.">
+    <desc>Bit 6: BAS Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="CDiag3Bit7" idhash="0XE4CEC747" title="7: BAS Voltg.">
+    <desc>Bit 7: BAS Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x46</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit0" idhash="0X121298BE" title="0: Cam Sensor Input">
+    <desc>Bit 0: Cam Sensor Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit1" idhash="0X121296FE" title="1: Tacho Feedback">
+    <desc>Bit 1: Tacho Feedback</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit2" idhash="0X12128C5E" title="2: Speed Sensor Input">
+    <desc>Bit 2: Speed Sensor Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit3" idhash="0X1212935E" title="3: Bit 3">
+    <desc>Bit 3: Bit 3</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit4" idhash="0X1212915E" title="4: Clutch Input">
+    <desc>Bit 4: Clutch Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit5" idhash="0X1212863E" title="5: Neutral Input">
+    <desc>Bit 5: Neutral Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit6" idhash="0X1212859E" title="6: Spare Input">
+    <desc>Bit 6: Spare Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DInBit7" idhash="0X12129FDE" title="7: Crank Sensor Input">
+    <desc>Bit 7: Crank Sensor Input</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>High</truestring>
+    <falsestring>Low</falsestring>
+    <packetoffset>0x55</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit0" idhash="0X9234BB2A" title="0: Coil 1 Output">
+    <desc>Bit 0: Coil 1 Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit1" idhash="0X9234B56A" title="1: Coil 2 Output">
+    <desc>Bit 1: Coil 2 Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit2" idhash="0X9234AFCA" title="2: Inj. 1 Output">
+    <desc>Bit 2: Injector 1 Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit3" idhash="0X9234B0CA" title="3: Inj. 2 Output">
+    <desc>Bit 3: Injector 2 Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit4" idhash="0X9234B2CA" title="4: Fuel Pump Outp.">
+    <desc>Bit 4: Fuel Pump Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit5" idhash="0X9234A5AA" title="5: Tacho Output">
+    <desc>Bit 5: Tach Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit6" idhash="0X9234A60A" title="6: Engine Light Outp.">
+    <desc>Bit 6: Check Engine Lamp Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="DOutBit7" idhash="0X9234BC4A" title="7: Fan 1 Output">
+    <desc>Bit 7: Cooling Fan 1 Output</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Active</truestring>
+    <falsestring>Inactive</falsestring>
+    <packetoffset>0x54</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit0" idhash="0XDBCA24CD" title="0: Bit 0">
+    <desc>Bit 0: Bit 0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit1" idhash="0XDBCA2A8D" title="1: Bit 1">
+    <desc>Bit 1: Bit 1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit2" idhash="0XDBCA302D" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit3" idhash="0XDBCA2F2D" title="3: Bit 3">
+    <desc>Bit 3: Bit 3</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit4" idhash="0XDBCA2D2D" title="4: Bit 4">
+    <desc>Bit 4: Bit 4</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit5" idhash="0XDBCA3A4D" title="5: EEPROM Failure">
+    <desc>Bit 5: EEPROM Failure</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit6" idhash="0XDBCA39ED" title="6: Sync">
+    <desc>Bit 6: Sync</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags0Bit7" idhash="0XDBCA23AD" title="7: Checksum Failure">
+    <desc>Bit 7: Checksum Failure</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x38</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit0" idhash="0X3FCA24CD" title="0: Engine Running">
+    <desc>Bit 0: Engine Running</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit1" idhash="0X3FCA2A8D" title="1: O2 Sensor Active">
+    <desc>Bit 1: O2 Sensor Active</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit2" idhash="0X3FCA302D" title="2: Accel Condition">
+    <desc>Bit 2: Accel Condition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit3" idhash="0X3FCA2F2D" title="3: Decel Condition">
+    <desc>Bit 3: Decel Condition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit4" idhash="0X3FCA2D2D" title="4: Engine Stop">
+    <desc>Bit 4: Engine Stop</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit5" idhash="0X3FCA3A4D" title="5: WOT Condition">
+    <desc>Bit 5: WOT Condition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit6" idhash="0X3FCA39ED" title="6: Idle Condition">
+    <desc>Bit 6: Idle Condition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags1Bit7" idhash="0X3FCA23AD" title="7: Ignition Switch">
+    <desc>Bit 7: Ignition Switch</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x39</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit0" idhash="0X95CA24CC" title="0: Bit 0">
+    <desc>Bit 0: Bit 0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit1" idhash="0X95CA2A8C" title="1: Bit 1">
+    <desc>Bit 1: Bit 1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit2" idhash="0X95CA302C" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit3" idhash="0X95CA2F2C" title="3: O2 Transition">
+    <desc>Bit 3: O2 Transition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit4" idhash="0X95CA2D2C" title="4: Learn Mode">
+    <desc>Bit 4: Learn Mode</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit5" idhash="0X95CA3A4C" title="5: Bit 5">
+    <desc>Bit 5: Bit 5</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit6" idhash="0X95CA39EC" title="6: Rich Condition">
+    <desc>Bit 6: Rich Condition Detected</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags2Bit7" idhash="0X95CA23AC" title="7: Closed Loop">
+    <desc>Bit 7: Closed Loop Active</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3a</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit0" idhash="0X65CA24CD" title="0: Bit0">
+    <desc>Bit 0: Bit0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit1" idhash="0X65CA2A8D" title="1: Bit1">
+    <desc>Bit 1: Bit1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit2" idhash="0X65CA302D" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit3" idhash="0X65CA2F2D" title="3: Cam Sensor Active">
+    <desc>Bit 3: Cam Sensor Active</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit4" idhash="0X65CA2D2D" title="4: Engine Kill">
+    <desc>Bit 4: Engine Kill</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit5" idhash="0X65CA3A4D" title="5: Immobilizer Active">
+    <desc>Bit 5: Immobilizer Active</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit6" idhash="0X65CA39ED" title="6: Bit 6">
+    <desc>Bit 6: Bit 6</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags3Bit7" idhash="0X65CA23AD" title="7: Bit 7">
+    <desc>Bit 7: Bit 7</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3b</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit0" idhash="0X45CA24CD" title="0: Bit 0">
+    <desc>Bit 0: Bit 0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit1" idhash="0X45CA2A8D" title="1: Bit 1">
+    <desc>Bit 1: Bit 1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit2" idhash="0X45CA302D" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit3" idhash="0X45CA2F2D" title="3: Bit 3">
+    <desc>Bit 3: Bit 3</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit4" idhash="0X45CA2D2D" title="4: Fuel Cut">
+    <desc>Bit 4: Fuel Cut</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit5" idhash="0X45CA3A4D" title="5: Continuous Fuel">
+    <desc>Bit 5: Continuous Fuel</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit6" idhash="0X45CA39ED" title="6: Bit 6">
+    <desc>Bit 6: Bit 6</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags4Bit7" idhash="0X45CA23AD" title="7: Bit 7">
+    <desc>Bit 7: Bit 7</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3c</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit0" idhash="0X33CA24CC" title="0: Bit 0">
+    <desc>Bit 0: Bit 0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit1" idhash="0X33CA2A8C" title="1: Bit 1">
+    <desc>Bit 1: Bit 1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit2" idhash="0X33CA302C" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit3" idhash="0X33CA2F2C" title="3: Bit 3">
+    <desc>Bit 3: Bit 3</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit4" idhash="0X33CA2D2C" title="4: Bit 4">
+    <desc>Bit 4: Bit 4</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit5" idhash="0X33CA3A4C" title="5: Bit 5">
+    <desc>Bit 5: Bit 5</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit6" idhash="0X33CA39EC" title="6: Bit 6">
+    <desc>Bit 6: Bit 6</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags5Bit7" idhash="0X33CA23AC" title="7: Bit 7">
+    <desc>Bit 7: Bit 7</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3d</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit0" idhash="0X09CA24CC" title="0: Bit 0">
+    <desc>Bit 0: Bit 0</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit1" idhash="0X09CA2A8C" title="1: Bit 1">
+    <desc>Bit 1: Bit 1</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit2" idhash="0X09CA302C" title="2: Bit 2">
+    <desc>Bit 2: Bit 2</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit3" idhash="0X09CA2F2C" title="3: Hot Condition">
+    <desc>Bit 3: Hot Condition</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit4" idhash="0X09CA2D2C" title="4: Bit 4">
+    <desc>Bit 4: Bit 4</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit5" idhash="0X09CA3A4C" title="5: Received Command">
+    <desc>Bit 5: Received Command</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit6" idhash="0X09CA39EC" title="6: Bit 6">
+    <desc>Bit 6: Bit 6</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="Flags6Bit7" idhash="0X09CA23AC" title="7: Bit 7">
+    <desc>Bit 7: Bit 7</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x3e</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit0" idhash="0XFC2DE59F" title="0: ETS Voltg.">
+    <desc>Bit 0: Engine Temperature Sensor Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit1" idhash="0XFC2DEBDF" title="1: ETS Voltg.">
+    <desc>Bit 1: Engine Temperature Sensor Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit2" idhash="0XFC2DF17F" title="2: O2 Rear">
+    <desc>Bit 2: O2 Rear Sensor Always Rich</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Rich Only</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit3" idhash="0XFC2DEE7F" title="3: O2 Rear">
+    <desc>Bit 3: O2 Rear Sensor Always Lean</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Lean Only</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit4" idhash="0XFC2DEC7F" title="4: O2 Rear">
+    <desc>Bit 4: O2 Rear Sensor Inactive</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Inactive</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit5" idhash="0XFC2DFB1F" title="5: TPS Voltg.">
+    <desc>Bit 5: TPS Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit6" idhash="0XFC2DF8BF" title="6: TPS Voltg.">
+    <desc>Bit 6: TPS Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag0Bit7" idhash="0XFC2DE2FF" title="7: Fan 1 Voltg.">
+    <desc>Bit 7: Fan Feedback Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4b</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit0" idhash="0XFC2D979F" title="0: Coil 1">
+    <desc>Bit 0: Coil1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit1" idhash="0XFC2D99DF" title="1: Coil 1">
+    <desc>Bit 1: Coil 1 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit2" idhash="0XFC2D837F" title="2: Inj. 1">
+    <desc>Bit 2: Injector 1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit3" idhash="0XFC2D9C7F" title="3: Inj. 1">
+    <desc>Bit 3: Injector 1 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit4" idhash="0XFC2D9E7F" title="4: Batt. Voltg.">
+    <desc>Bit 4: Battery Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit5" idhash="0XFC2D891F" title="5: Batt. Voltg.">
+    <desc>Bit 5: Battery Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit6" idhash="0XFC2D8ABF" title="6: IAT Voltg.">
+    <desc>Bit 6: Air Temp. Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag1Bit7" idhash="0XFC2D90FF" title="7: IAT Voltg.">
+    <desc>Bit 7: Air Temp. Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4c</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit0" idhash="0XFC2D429F" title="0: Tacho.">
+    <desc>Bit 0: Tachometer Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit1" idhash="0XFC2D4CDF" title="1: Tacho.">
+    <desc>Bit 1: Tachometer Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit2" idhash="0XFC2D567F" title="2: Fuelpump">
+    <desc>Bit 2: Fuel Pump Feedback Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit3" idhash="0XFC2D497F" title="3: Fuelpump">
+    <desc>Bit 3: Fuel Pump Feedback Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit4" idhash="0XFC2D4B7F" title="4: Inj. 2">
+    <desc>Bit 4: Injector 1 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit5" idhash="0XFC2D5C1F" title="5: Inj. 2">
+    <desc>Bit 5: Injector 2 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit6" idhash="0XFC2D5FBF" title="6: Coil 2">
+    <desc>Bit 6: Coil 2 Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag2Bit7" idhash="0XFC2D45FF" title="7: Coil 2">
+    <desc>Bit 7: Coil 2 Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4d</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit0" idhash="0XFC2DBA9F" title="0: Sync">
+    <desc>Bit 0: Sync Failure</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Falure</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit1" idhash="0XFC2DB4DF" title="1: ADC">
+    <desc>Bit 1: ECM Analog-Digital Conversion Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit2" idhash="0XFC2DAE7F" title="2: EEPROM">
+    <desc>Bit 2: ECM EEPROM Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit3" idhash="0XFC2DB17F" title="3: Flash">
+    <desc>Bit 3: ECM Flash Memory Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit4" idhash="0XFC2DB37F" title="4: RAM">
+    <desc>Bit 4: ECM RAM Error</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Failure</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit5" idhash="0XFC2DA41F" title="5: Fan 1 Voltg.">
+    <desc>Bit 5: Fan Feedback Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit6" idhash="0XFC2DA7BF" title="6: BAS Voltg.">
+    <desc>Bit 6: BAS Voltage Too Low</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too Low</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="HDiag3Bit7" idhash="0XFC2DBDFF" title="7: BAS Voltg.">
+    <desc>Bit 7: BAS Voltage Too High</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Too High</truestring>
+    <packetoffset>0x4e</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit0" idhash="0X683F6EB5" title="0: Idle Spark Advance">
+    <desc>Bit 0: Automatic spark advance at idle</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x1</operand>
+    <bitop>AND</bitop>
+    <result>0x1</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit1" idhash="0X683F60F5" title="1: Idle Closed Loop">
+    <desc>Bit 1: Closed loop at idle</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Enabled</truestring>
+    <falsestring>Disabled</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x2</operand>
+    <bitop>AND</bitop>
+    <result>0x2</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit2" idhash="0X683F7A55" title="2: Fuel Cut">
+    <desc>Bit 2: Deceleration fuel cut enabled</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Enabled</truestring>
+    <falsestring>Disabled</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x4</operand>
+    <bitop>AND</bitop>
+    <result>0x4</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit3" idhash="0X683F6555" title="3: Open Loop Learn">
+    <desc>Bit 3: Learning in Open Loop enabled</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Enabled</truestring>
+    <falsestring>Disabled</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x8</operand>
+    <bitop>AND</bitop>
+    <result>0x8</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit4" idhash="0X683F6755" title="4: Bank Angle Sensor">
+    <desc>Bit 4: Bank Angle Sensor enabled</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Enabled</truestring>
+    <falsestring>Disabled</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x10</operand>
+    <bitop>AND</bitop>
+    <result>0x10</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit5" idhash="0X683F7035" title="5: FP Duty Cycle Lookup">
+    <desc>Bit 5: Initial FP duty cycle</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>Enabled</truestring>
+    <falsestring>Disabled</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x20</operand>
+    <bitop>AND</bitop>
+    <result>0x20</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit6" idhash="0X683F7395" title="6: Bit 6">
+    <desc>Bit 6: Bit 6</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x40</operand>
+    <bitop>AND</bitop>
+    <result>0x40</result>
+</ADXBITMASK>
+
+<ADXBITMASK id="SysConfigBit7" idhash="0X683F69D5" title="7: Bit 7">
+    <desc>Bit 7: Bit 7</desc>
+    <flags>0x00000004</flags>
+    <parentcmdidhash>0x00000000</parentcmdidhash>
+    <truestring>On</truestring>
+    <falsestring>Off</falsestring>
+    <packetoffset>0x7</packetoffset>
+    <operand>0x80</operand>
+    <bitop>AND</bitop>
+    <result>0x80</result>
+</ADXBITMASK>
+
+<ADXLISTVIEW id="errorcodes" idhash="0x32C254F1" title="Error Codes">
+    <desc>Error Code Ordered By Name</desc>
+    <entrycount>80</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07596" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACEC027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACECE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACED4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACECBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACEC9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACEDEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACEDD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x5ACEC747" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07BD6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECEC027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECECE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECED4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECECBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECEC9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECEDEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECEDD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBECEC747" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F06176" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CEC026" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CECE66" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CED4C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CECBC6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CEC9C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CEDEA6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CEDD06" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x14CEC746" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X08F07E76" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CEC027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CECE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CED4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CECBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CEC9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CEDEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CEDD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE4CEC747" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F075A7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6C027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6CE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6D4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6CBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6C9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6DEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6DD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x59D6C747" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07BE7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6C027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6CE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6D4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6CBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6C9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6DEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6DD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xBDD6C747" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F06147" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6C026" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6CE66" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6D4C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6CBC6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6C9C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6DEA6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6DD06" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x17D6C746" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X88F07E47" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6C027" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6CE67" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6D4C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6CBC7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6C9C7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6DEA7" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6DD07" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xE7D6C747" />
+</ADXLISTVIEW>
+
+<ADXLISTVIEW id="statusflags" idhash="0xF428D3DF" title="Status Flags">
+    <desc>Status Bitfields Ordered By Name</desc>
+    <entrycount>92</entrycount>
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XCD79E11B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x121298BE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x121296FE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x12128C5E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x1212935E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x1212915E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x1212863E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x1212859E" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x12129FDE" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XAF40A919" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234BB2A" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234B56A" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234AFCA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234B0CA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234B2CA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234A5AA" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234A60A" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x9234BC4A" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEDD86" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA24CD" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA2A8D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA302D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA2F2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA2D2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA3A4D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA39ED" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xDBCA23AD" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED3C6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA24CD" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA2A8D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA302D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA2F2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA2D2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA3A4D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA39ED" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x3FCA23AD" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC966" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA24CC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA2A8C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA302C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA2F2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA2D2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA3A4C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA39EC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x95CA23AC" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED666" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA24CD" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA2A8D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA302D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA2F2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA2D2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA3A4D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA39ED" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x65CA23AD" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BED466" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA24CD" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA2A8D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA302D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA2F2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA2D2D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA3A4D" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA39ED" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x45CA23AD" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC306" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA24CC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA2A8C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA302C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA2F2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA2D2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA3A4C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA39EC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x33CA23AC" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0X46BEC0A6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA24CC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA2A8C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA302C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA2F2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA2D2C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA3A4C" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA39EC" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x09CA23AC" />
+    <ADXLVENTRY entrytype="1" flags="0x00000001" title="" />
+    <ADXLVENTRY entrytype="0" itemidhash="0XC8904672" />
+</ADXLISTVIEW>
+
+<ADXHEADER>
+    <guid>b91e6342-94d7-47c1-8170-ad04e9399e0f</guid>
+    <flags>0x00</flags>
+    <objectcount>217</objectcount>
+    <userversion>1.0</userversion>
+    <author>(c) 2010-2012, Gunter Baumann (gunter@ecmspy.com)</author>
+    <desc>DDFI (BUEIA) Stock/P&amp;A ECM Runtime Data Setup</desc>
+    <baud>9600</baud>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="3" baud="0" signed="0" lsbfirst="0" float="0" />
+    <connectcmd>MACROECMTYPE</connectcmd>
+    <monitorcmd>MACRORTDATA</monitorcmd>
+</ADXHEADER>
