@@ -31,6 +31,8 @@ Repository structure is defined below.
 
 Various Tuning efforts
 
+https://pcmhacking.net/forums/viewtopic.php?f=7&t=1396
+
 https://pcmhacking.net/
 
 http://www.gearhead-efi.com/
