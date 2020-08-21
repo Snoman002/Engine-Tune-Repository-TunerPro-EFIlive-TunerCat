@@ -1,0 +1,52 @@
+<!-- Written 08/18/2020 04:53:20 -->
+<XDFFORMAT version="1.60">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <fileversion>1.0</fileversion>
+    <deftitle>Lean Cruise Enabler</deftitle>
+    <description></description>
+    <author>James Short | ShorTuning Inc.</author>
+    <BASEOFFSET offset="0" subtract="0" />
+    <DEFAULTS datasizeinbits="16" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x20000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+  </XDFHEADER>
+  <XDFCONSTANT uniqueid="0xBDE">
+    <title>12212156 Lean Cruise</title>
+    <description>26118 = Disabled&#013;&#010;20081 = Enabled</description>
+    <EMBEDDEDDATA mmedaddress="0x29ADA" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x797C">
+    <title>12587603 Lean Cruise</title>
+    <description>26118 = Disabled&#013;&#010;20081 = Enabled</description>
+    <EMBEDDEDDATA mmedaddress="0x2ADEE" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+  <XDFCONSTANT uniqueid="0x189">
+    <title>12587604 Lean Cruise</title>
+    <description>26118 = Disabled&#013;&#010;20081 = Enabled</description>
+    <EMBEDDEDDATA mmedaddress="0x2AE2C" mmedelementsizebits="16" mmedmajorstridebits="0" mmedminorstridebits="0" />
+    <outputtype>2</outputtype>
+    <decimalpl>0</decimalpl>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="X">
+      <VAR id="X" />
+    </MATH>
+  </XDFCONSTANT>
+</XDFFORMAT>
