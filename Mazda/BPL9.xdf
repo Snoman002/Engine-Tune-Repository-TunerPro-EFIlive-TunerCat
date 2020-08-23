@@ -1,0 +1,169 @@
+<!-- Written 10/31/2010 20:59:58 -->
+<XDFFORMAT version="1.30">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <fileversion>1.0</fileversion>
+    <deftitle>Stock 90 HP 1996 1.6 MX-5</deftitle>
+    <description></description>
+    <author>Eivind Holm</author>
+    <baseoffset>0</baseoffset>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+    <REGION type="0xFFFFFFFF" startaddress="0x0" size="0x8000" regionflags="0x0" name="Binary File" desc="This region describes the bin file edited by this XDF" />
+    <CATEGORY index="0x0" name="Fuel" />
+    <CATEGORY index="0x1" name="Ignition" />
+  </XDFHEADER>
+  <XDFTABLE uniqueid="0x54C3" flags="0x0">
+    <title>Fuel Map</title>
+    <description>Fuel A/F ratio vs Load and RPM</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" />
+      <units>RPM</units>
+      <indexcount>13</indexcount>
+      <min>1000.000000</min>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1024" />
+      <LABEL index="1" value="1536" />
+      <LABEL index="2" value="2048" />
+      <LABEL index="3" value="2560" />
+      <LABEL index="4" value="3072" />
+      <LABEL index="5" value="3584" />
+      <LABEL index="6" value="4096" />
+      <LABEL index="7" value="4608" />
+      <LABEL index="8" value="5120" />
+      <LABEL index="9" value="5632" />
+      <LABEL index="10" value="6144" />
+      <LABEL index="11" value="6656" />
+      <LABEL index="12" value="7168" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" />
+      <units>Load</units>
+      <indexcount>16</indexcount>
+      <min>1000.000000</min>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
+      <LABEL index="10" value="11" />
+      <LABEL index="11" value="12" />
+      <LABEL index="12" value="13" />
+      <LABEL index="13" value="14" />
+      <LABEL index="14" value="15" />
+      <LABEL index="15" value="16" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x72C9" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="13" mmedmajorstridebits="8" />
+      <units>A/F</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="14.7/(1.0+x*0.78/100.0)">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFTABLE uniqueid="0x1E60" flags="0x0">
+    <title>Timing Map</title>
+    <description>Timing advance vs Load and RPM</description>
+    <XDFAXIS id="x" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" />
+      <units>RPM</units>
+      <indexcount>14</indexcount>
+      <min>1000.000000</min>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="512" />
+      <LABEL index="1" value="1024" />
+      <LABEL index="2" value="1536" />
+      <LABEL index="3" value="2048" />
+      <LABEL index="4" value="2560" />
+      <LABEL index="5" value="3072" />
+      <LABEL index="6" value="3584" />
+      <LABEL index="7" value="4096" />
+      <LABEL index="8" value="4608" />
+      <LABEL index="9" value="5120" />
+      <LABEL index="10" value="5632" />
+      <LABEL index="11" value="6144" />
+      <LABEL index="12" value="6656" />
+      <LABEL index="13" value="7168" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="y" uniqueid="0x0">
+      <EMBEDDEDDATA mmedelementsizebits="8" mmedmajorstridebits="-32" />
+      <units>Load</units>
+      <indexcount>16</indexcount>
+      <min>1000.000000</min>
+      <outputtype>4</outputtype>
+      <datatype>0</datatype>
+      <unittype>0</unittype>
+      <DALINK index="0" />
+      <LABEL index="0" value="1" />
+      <LABEL index="1" value="2" />
+      <LABEL index="2" value="3" />
+      <LABEL index="3" value="4" />
+      <LABEL index="4" value="5" />
+      <LABEL index="5" value="6" />
+      <LABEL index="6" value="7" />
+      <LABEL index="7" value="8" />
+      <LABEL index="8" value="9" />
+      <LABEL index="9" value="10" />
+      <LABEL index="10" value="11" />
+      <LABEL index="11" value="12" />
+      <LABEL index="12" value="13" />
+      <LABEL index="13" value="13" />
+      <LABEL index="14" value="15" />
+      <LABEL index="15" value="16" />
+      <MATH equation="X">
+        <VAR id="X" />
+      </MATH>
+    </XDFAXIS>
+    <XDFAXIS id="z">
+      <EMBEDDEDDATA mmedaddress="0x75CC" mmedelementsizebits="8" mmedrowcount="16" mmedcolcount="14" mmedmajorstridebits="8" />
+      <units>deg</units>
+      <decimalpl>1</decimalpl>
+      <min>0.000000</min>
+      <max>255.000000</max>
+      <outputtype>1</outputtype>
+      <MATH equation="(x-86)/4.5+10">
+        <VAR id="x" />
+      </MATH>
+    </XDFAXIS>
+  </XDFTABLE>
+  <XDFCONSTANT uniqueid="0x7B89">
+    <title>RPM Limiter</title>
+    <description>2 byte value, hex(15 000 000 / RPM)</description>
+    <EMBEDDEDDATA mmedaddress="0x6D32" mmedelementsizebits="16" />
+    <units>RPM</units>
+    <outputtype>2</outputtype>
+    <datatype>0</datatype>
+    <unittype>0</unittype>
+    <DALINK index="0" />
+    <MATH equation="15000000 / x">
+      <VAR id="x" />
+    </MATH>
+  </XDFCONSTANT>
+</XDFFORMAT>
