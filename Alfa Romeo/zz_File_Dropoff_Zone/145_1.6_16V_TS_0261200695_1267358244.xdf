@@ -1,0 +1,13 @@
+<!-- Written 06/21/2013 14:48:32 -->
+<XDFFORMAT version="1.50">
+  <XDFHEADER>
+    <flags>0x1</flags>
+    <description>MP31
+HW: 0261200695
+SW: 1267358244
+ALFA ROMEO 145 1.6 16V TS
+</description>
+    <baseoffset>0</baseoffset>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="1" signed="0" lsbfirst="0" float="0" />
+ <CATEGORY index="0x0" name="Tables" />
+  </XDFHEADER>
