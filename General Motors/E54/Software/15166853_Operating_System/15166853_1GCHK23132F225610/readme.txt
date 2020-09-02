@@ -1,24 +1,24 @@
 stock
-VIN	1GCHK23192F219021
+VIN	1GCHK23132F225610
 Engine	LB7
 Transmission	Automatic
 PCM flash	512KB
-Operating System	15186006
-Calibration	15094440
-OS ID	EB
+Operating System	15166853
+Calibration	15166852
+OS ID	EA
 Cal ID	
-BCC	DPJK
+BCC	DRUJ
 OS Level	
 Cal Level	
-Cal file name	15186006.calz
+Cal file name	15166853.calz
 Cal file version	8.18
 Cal file date	08 October, 2008
-Operating System	15186006	$74A7	
-Engine Calibration	15166859	$0E33	
-Engine Diagnostics	15100902	$A848	
-Fuel System	15175988	$1882	
-System	15166868	$3E69	
-Speedometer	15166876	$B619	
+Operating System	15166853	$D0AD	
+Engine Calibration	15166858	$F857	
+Engine Diagnostics	15166862	$7BD5	
+Fuel System	15166854	$2F33	
+System	15170427	$3C8C	
+Speedometer	15166875	$B68B	
 Manufacturer: GENERAL MOTORS LLC
 
 DBAs:
@@ -48,4 +48,4 @@ Electrification Level:
 Engine Brake (HP):
 Engine Manufacturer: Isuzu
 Transmission Speed:
-Transmission Style:
+Transmission Style: Automatic auto

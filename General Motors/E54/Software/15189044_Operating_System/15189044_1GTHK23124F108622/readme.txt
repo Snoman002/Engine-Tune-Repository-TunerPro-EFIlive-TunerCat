@@ -1,40 +1,39 @@
-stock
-VIN	1GCHK23192F219021
+VIN	1GTHK23124F108622
 Engine	LB7
 Transmission	Automatic
 PCM flash	512KB
-Operating System	15186006
-Calibration	15094440
-OS ID	EB
+Operating System	15189044
+Calibration	12210729
+OS ID	DN
 Cal ID	
-BCC	DPJK
+BCC	DLTJ
 OS Level	
 Cal Level	
-Cal file name	15186006.calz
+Cal file name	15189044.calz
 Cal file version	8.18
 Cal file date	08 October, 2008
-Operating System	15186006	$74A7	
-Engine Calibration	15166859	$0E33	
-Engine Diagnostics	15100902	$A848	
-Fuel System	15175988	$1882	
-System	15166868	$3E69	
-Speedometer	15166876	$B619	
+Operating System	15189044	$F157	
+Engine Calibration	15189052	$4988	
+Engine Diagnostics	15076379	$7588	
+Fuel System	15076353	$A3D3	
+System	15076385	$9F33	
+Speedometer	15076393	$1689	
 Manufacturer: GENERAL MOTORS LLC
 
 DBAs:
 
 Vehicle Type: TRUCK
 
-Model Year: 2002
+Model Year: 2004
 
-Make: CHEVROLET
+Make: GMC
 
-Model: Silverado
+Model: Sierra
 
 Body Class: Pickup
 
-Series: 2500
-Trim: 3/4 Ton
+Series:
+Trim: 2500 (3/4 ton)
 Gross Vehicle Weight Rating: Class 2H: 9,001 - 10,000 lb (4,082 - 4,536 kg)
 Axles:
 Engine Displacement (L): 6.6
@@ -48,4 +47,4 @@ Electrification Level:
 Engine Brake (HP):
 Engine Manufacturer: Isuzu
 Transmission Speed:
-Transmission Style:
+Transmission Style: Automatic auto
