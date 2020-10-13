@@ -1,0 +1,636 @@
+<ADXFORMAT version="1.01">
+  <!-- Written 09/14/2020 13:09:44 -->
+  <ADXHEADER>
+    <guid>3a7ee20e-b71a-4c78-afad-1c709e88f456</guid>
+    <flags>0x10000</flags>
+    <objectcount>63</objectcount>
+    <userversion>1.00</userversion>
+    <author>VN5000</author>
+    <baud>9600</baud>
+    <DEFAULTS datasizeinbits="8" sigdigits="2" outputtype="3" baud="0" signed="0" lsbfirst="0" float="0" />
+    <monitorcmd>M15</monitorcmd>
+  </ADXHEADER>
+
+  <ADXHISTOGRAM id="B1LTFTHISTORY" idhash="0x0EB2680A" title="Main VE LTFT B1 History">
+    <desc>Long term fuel trim Bank 1</desc>
+    <rows>20</rows>
+    <cols>19</cols>
+    <xmin>0.000000</xmin>
+    <xmax>0.000000</xmax>
+    <ymin>0.000000</ymin>
+    <ymax>0.000000</ymax>
+    <rowval index="0" val="400.000000" />
+    <rowval index="1" val="800.000000" />
+    <rowval index="2" val="1200.000000" />
+    <rowval index="3" val="1600.000000" />
+    <rowval index="4" val="2000.000000" />
+    <rowval index="5" val="2400.000000" />
+    <rowval index="6" val="2800.000000" />
+    <rowval index="7" val="3200.000000" />
+    <rowval index="8" val="3600.000000" />
+    <rowval index="9" val="4000.000000" />
+    <rowval index="10" val="4400.000000" />
+    <rowval index="11" val="4800.000000" />
+    <rowval index="12" val="5200.000000" />
+    <rowval index="13" val="5600.000000" />
+    <rowval index="14" val="6000.000000" />
+    <rowval index="15" val="6400.000000" />
+    <rowval index="16" val="6800.000000" />
+    <rowval index="17" val="7200.000000" />
+    <rowval index="18" val="7600.000000" />
+    <rowval index="19" val="8000.000000" />
+    <colval index="0" val="15.000000" />
+    <colval index="1" val="20.000000" />
+    <colval index="2" val="25.000000" />
+    <colval index="3" val="30.000000" />
+    <colval index="4" val="35.000000" />
+    <colval index="5" val="40.000000" />
+    <colval index="6" val="45.000000" />
+    <colval index="7" val="50.000000" />
+    <colval index="8" val="55.000000" />
+    <colval index="9" val="60.000000" />
+    <colval index="10" val="65.000000" />
+    <colval index="11" val="70.000000" />
+    <colval index="12" val="75.000000" />
+    <colval index="13" val="80.000000" />
+    <colval index="14" val="85.000000" />
+    <colval index="15" val="90.000000" />
+    <colval index="16" val="95.000000" />
+    <colval index="17" val="100.000000" />
+    <colval index="18" val="105.000000" />
+    <historysize>100</historysize>
+    <xidhash>0xCD7B53DB</xidhash>
+    <yidhash>0xCD0CD1DB</yidhash>
+    <zidhash>0xC1AB3C76</zidhash>
+  </ADXHISTOGRAM>
+
+  <ADXHISTOGRAM id="B2LTFTHISTORY" idhash="0x5EB26807" title="Main VE LTFT B2 History">
+    <desc>Long term fuel trim Bank 2</desc>
+    <rows>20</rows>
+    <cols>19</cols>
+    <xmin>0.000000</xmin>
+    <xmax>0.000000</xmax>
+    <ymin>0.000000</ymin>
+    <ymax>0.000000</ymax>
+    <rowval index="0" val="400.000000" />
+    <rowval index="1" val="800.000000" />
+    <rowval index="2" val="1200.000000" />
+    <rowval index="3" val="1600.000000" />
+    <rowval index="4" val="2000.000000" />
+    <rowval index="5" val="2400.000000" />
+    <rowval index="6" val="2800.000000" />
+    <rowval index="7" val="3200.000000" />
+    <rowval index="8" val="3600.000000" />
+    <rowval index="9" val="4000.000000" />
+    <rowval index="10" val="4400.000000" />
+    <rowval index="11" val="4800.000000" />
+    <rowval index="12" val="5200.000000" />
+    <rowval index="13" val="5600.000000" />
+    <rowval index="14" val="6000.000000" />
+    <rowval index="15" val="6400.000000" />
+    <rowval index="16" val="6800.000000" />
+    <rowval index="17" val="7200.000000" />
+    <rowval index="18" val="7600.000000" />
+    <rowval index="19" val="8000.000000" />
+    <colval index="0" val="15.000000" />
+    <colval index="1" val="20.000000" />
+    <colval index="2" val="25.000000" />
+    <colval index="3" val="30.000000" />
+    <colval index="4" val="35.000000" />
+    <colval index="5" val="40.000000" />
+    <colval index="6" val="45.000000" />
+    <colval index="7" val="50.000000" />
+    <colval index="8" val="55.000000" />
+    <colval index="9" val="60.000000" />
+    <colval index="10" val="65.000000" />
+    <colval index="11" val="70.000000" />
+    <colval index="12" val="75.000000" />
+    <colval index="13" val="80.000000" />
+    <colval index="14" val="85.000000" />
+    <colval index="15" val="90.000000" />
+    <colval index="16" val="95.000000" />
+    <colval index="17" val="100.000000" />
+    <colval index="18" val="105.000000" />
+    <historysize>100</historysize>
+    <xidhash>0xCD7B53DB</xidhash>
+    <zidhash>0xC1AB26D6</zidhash>
+  </ADXHISTOGRAM>
+
+  <ADXHISTOGRAM id="T1" idhash="0xDE6A3A10" title="ADV">
+    <parentcmdidhash>0x0999B429</parentcmdidhash>
+    <rows>16</rows>
+    <cols>10</cols>
+    <xmin>0.000000</xmin>
+    <xmax>0.000000</xmax>
+    <ymin>0.000000</ymin>
+    <ymax>0.000000</ymax>
+    <rowval index="0" val="400.000000" />
+    <rowval index="1" val="800.000000" />
+    <rowval index="2" val="1200.000000" />
+    <rowval index="3" val="1600.000000" />
+    <rowval index="4" val="2000.000000" />
+    <rowval index="5" val="2400.000000" />
+    <rowval index="6" val="2800.000000" />
+    <rowval index="7" val="3200.000000" />
+    <rowval index="8" val="3600.000000" />
+    <rowval index="9" val="4000.000000" />
+    <rowval index="10" val="4400.000000" />
+    <rowval index="11" val="4800.000000" />
+    <rowval index="12" val="5200.000000" />
+    <rowval index="13" val="5600.000000" />
+    <rowval index="14" val="6000.000000" />
+    <rowval index="15" val="6400.000000" />
+    <colval index="0" val="10.000000" />
+    <colval index="1" val="20.000000" />
+    <colval index="2" val="30.000000" />
+    <colval index="3" val="40.000000" />
+    <colval index="4" val="50.000000" />
+    <colval index="5" val="60.000000" />
+    <colval index="6" val="70.000000" />
+    <colval index="7" val="80.000000" />
+    <colval index="8" val="90.000000" />
+    <colval index="9" val="100.000000" />
+    <historysize>10</historysize>
+    <xidhash>0xCD7B53DB</xidhash>
+    <yidhash>0xCD0CD1DB</yidhash>
+    <zidhash>0xCD12135B</zidhash>
+  </ADXHISTOGRAM>
+
+  <ADXVALUE id="KPH" idhash="0xCD06CC1B" title="KPH">
+    <parentcmdidhash>0x6639B423</parentcmdidhash>
+    <units>KM/H</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M17" idhash="0xCD79465B" title="KPH MACRO" repeatcount="1">
+    <NODE commandID="KPH TX" repeatcount="1" />
+    <NODE commandID="KPH RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="KPH RX" idhash="0x6639B423" title="KPH RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="KPH TX" idhash="0x663BF023" title="KPH TX">
+    <bytestring size="0xB">4D30315030445330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXDASHBOARD id="D1" idhash="0xDE6BC210" title="DASH 1">
+    <entrycount>16</entrycount>
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD0CD1DB" left="0" top="0" right="30" bottom="30" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD44515B" left="30" top="0" right="60" bottom="30" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD7B4C5B" left="60" top="0" right="90" bottom="30" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD12135B" left="0" top="30" right="30" bottom="60" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD7B53DB" left="30" top="30" right="60" bottom="60" arcmax="300" />
+    <ADXDGENTRY gaugetype="0" itemidhash="0xCD06CC1B" left="60" top="30" right="90" bottom="60" arcmax="300" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xA3237619" left="0" top="60" right="20" bottom="80" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xA3236CB9" left="20" top="60" right="40" bottom="80" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xC1AB3EDE" left="40" top="60" right="60" bottom="80" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0x35648218" left="60" top="60" right="80" bottom="80" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD6DE15B" left="80" top="60" right="100" bottom="80" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD7B53DB" left="0" top="80" right="20" bottom="100" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD7B4C5B" left="20" top="80" right="40" bottom="100" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xC1AB3C76" left="40" top="80" right="60" bottom="100" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xC1AB26D6" left="60" top="80" right="80" bottom="100" />
+    <ADXDGENTRY gaugetype="1" itemidhash="0xCD66CE5B" left="80" top="80" right="100" bottom="100" />
+  </ADXDASHBOARD>
+
+  <ADXVALUE id="LTFT B2" idhash="0xC1AB26D6" title="LTFT B2">
+    <parentcmdidhash>0x935F3275</parentcmdidhash>
+    <units>%</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="STFT B2 " idhash="0x35648218" title="STFT B2">
+    <parentcmdidhash>0x920B3275</parentcmdidhash>
+    <units>%</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="LTFT B1" idhash="0xC1AB3C76" title="LTFT B1">
+    <parentcmdidhash>0x9E0F3275</parentcmdidhash>
+    <units>%</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M12" idhash="0xCD7955DB" title="LTFT B2 MACRO" repeatcount="1">
+    <NODE commandID="LTFT B2 TX" repeatcount="1" />
+    <NODE commandID="LTFT B2 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="LTFT B2 RX" idhash="0x935F3275" title="LTFT B2 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="LTFT B2 TX" idhash="0x935D7675" title="LTFT B2 TX">
+    <bytestring size="0xB">4D30315030395330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M16" idhash="0xCD795C1B" title="LTFT B1 MACRO" repeatcount="1">
+    <NODE commandID="LTFT B1 TX" repeatcount="1" />
+    <NODE commandID="LTFT B1 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="LTFT B1 RX" idhash="0x9E0F3275" title="LTFT B1 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="LTFT B1 TX" idhash="0x9E0D7675" title="LTFT B1TX">
+    <bytestring size="0xB">4D30315030375330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M14" idhash="0xCD7948DB" title="STFT B2 MACRO" repeatcount="1">
+    <NODE commandID="STFT B2 TX" repeatcount="1" />
+    <NODE commandID="STFT B2 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="STFT B2 RX" idhash="0x920B3275" title="STFT B2 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="STFT B2 TX" idhash="0x92097675" title="STFT B2 TX">
+    <bytestring size="0xB">4D30315030385330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M13" idhash="0xCD794ADB" title="STFT B1 MACRO" repeatcount="1">
+    <NODE commandID="STFT B1 TX" repeatcount="1" />
+    <NODE commandID="STFT B1 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="STFT B1 RX" idhash="0x9F5B3275" title="STFT B1 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="STFT B1 TX" idhash="0x9F597675" title="STFT B1 TX">
+    <bytestring size="0xB">4D30315030365330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M15" idhash="0xCD795FBB" title="MONITOR MACRO" repeatcount="1">
+    <NODE commandID="TPS MACRO" repeatcount="1" />
+    <NODE commandID="M2" repeatcount="1" />
+    <NODE commandID="RPM MACRO" repeatcount="1" />
+    <NODE commandID="M5" repeatcount="1" />
+    <NODE commandID="M6" repeatcount="1" />
+    <NODE commandID="M7" repeatcount="1" />
+    <NODE commandID="M8" repeatcount="1" />
+    <NODE commandID="M9" repeatcount="1" />
+    <NODE commandID="M13" repeatcount="1" />
+    <NODE commandID="M14" repeatcount="1" />
+    <NODE commandID="M16" repeatcount="1" />
+    <NODE commandID="M12" repeatcount="1" />
+    <NODE commandID="M4" repeatcount="1" />
+    <NODE commandID="M17" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXVALUE id="STFT B1" idhash="0xC1AB3EDE" title="STFT B1">
+    <parentcmdidhash>0x9F5B3275</parentcmdidhash>
+    <units>%</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="O2 2" idhash="0xA3236CB9" title="O2 2">
+    <parentcmdidhash>0xB6688331</parentcmdidhash>
+    <units>VOLTS</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="1.200000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X / 200">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="O2 1" idhash="0xA3237619" title="O2 1">
+    <parentcmdidhash>0xBB388331</parentcmdidhash>
+    <units>VOLTS</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="1.200000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>3</outputtype>
+    <MATH equation="X / 200">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M9" idhash="0xDE6BD930" title="O2  B2 MACRO" repeatcount="1">
+    <NODE commandID="O2 2 TX" repeatcount="1" />
+    <NODE commandID="O2 2 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="O2 2 RX" idhash="0xB6688331" title="O2 2 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>2</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>2</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="O2 2 TX" idhash="0xB66AC731" title="O2 2 TX">
+    <bytestring size="0xB">4D30315031385330325231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M8" idhash="0xDE6BCE70" title="O2  B1 MACRO" repeatcount="1">
+    <NODE commandID="O2 1 TX" repeatcount="1" />
+    <NODE commandID="O2 1 RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="O2 1 RX" idhash="0xBB388331" title="O2 1 RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>2</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>2</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="O2 1 TX" idhash="0xBB3AC731" title="O2 1 TX">
+    <bytestring size="0xB">4D30315031345330325231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXVALUE id="MAP" idhash="0xCD7B53DB" title="MAP">
+    <parentcmdidhash>0xA9D9B41D</parentcmdidhash>
+    <units>KPA</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="255.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M7" idhash="0xDE6BC330" title="MAP MACRO" repeatcount="1">
+    <NODE commandID="MAP TX" repeatcount="1" />
+    <NODE commandID="MAP RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="MAP RX" idhash="0xA9D9B41D" title="MAP RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="MAP TX" idhash="0xA9DBF01D" title="MAP TX">
+    <bytestring size="0xB">4D30315030425330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXVALUE id="ADV" idhash="0xCD12135B" title="ADV">
+    <parentcmdidhash>0x0999B429</parentcmdidhash>
+    <units>DEG</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="-10.000000" high="45.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X / 2 - 64">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M6" idhash="0xDE6BD970" title="ADV MACRO" repeatcount="1">
+    <NODE commandID="ADV TX" repeatcount="1" />
+    <NODE commandID="ADV RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="ADV RX" idhash="0x0999B429" title="ADV RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="ADV TX" idhash="0x099BF029" title="ADV TX">
+    <bytestring size="0xB">4D30315030455330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXVALUE id="CTS" idhash="0xCD6DE15B" title="CTS">
+    <parentcmdidhash>0xF099B416</parentcmdidhash>
+    <units>DEG</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="130.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X - 40">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="IAT" idhash="0xCD66CE5B" title="IAT">
+    <parentcmdidhash>0x6719B413</parentcmdidhash>
+    <units>DEG</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="130.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X - 40">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="MAF" idhash="0xCD7B4C5B" title="MAF">
+    <parentcmdidhash>0xA619B41D</parentcmdidhash>
+    <units>G/S</units>
+    <packetoffset>0x00</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="600.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X / 100">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXVALUE id="RPM" idhash="0xCD0CD1DB" title="RPM">
+    <parentcmdidhash>0x68D9B426</parentcmdidhash>
+    <units>RPM</units>
+    <packetoffset>0x00</packetoffset>
+    <sizeinbits>16</sizeinbits>
+    <range low="0.000000" high="7500.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X /4">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXMACRO id="M5" idhash="0xDE6BDAD0" title="IAT MACRO" repeatcount="1">
+    <NODE commandID="IAT TX" repeatcount="1" />
+    <NODE commandID="IAT RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="IAT RX" idhash="0x6719B413" title="IAT RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="IAT TX" idhash="0x671BF013" title="IAT TX">
+    <bytestring size="0xB">4D30315030465330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M4" idhash="0xDE6BCDB0" title="MAF MACRO" repeatcount="1">
+    <NODE commandID="MAF TX" repeatcount="1" />
+    <NODE commandID="MAF RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="MAF RX" idhash="0xA619B41D" title="MAF RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>2</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>2</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="MAF TX" idhash="0xA61BF01D" title="MAF TX">
+    <bytestring size="0xB">4D30315031305330325231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="RPM MACRO" idhash="0x01EB676D" title="RPM MACRO" repeatcount="1">
+    <NODE commandID="RPM TX" repeatcount="1" />
+    <NODE commandID="RPM RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="RPM RX" idhash="0x68D9B426" title="RPM RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>2</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>2</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="RPM TX" idhash="0x68DBF026" title="RPM TX">
+    <bytestring size="0xB">4D30315030435330325231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMACRO id="M2" idhash="0xDE6BD0B0" title="CTS MACRO" repeatcount="1">
+    <NODE commandID="CTS TX" repeatcount="1" />
+    <NODE commandID="CTS RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="CTS RX" idhash="0xF099B416" title="CTS RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="CTS TX" idhash="0xF09BF016" title="CTS TX">
+    <bytestring size="0xB">4D30315030355330315231</bytestring>
+  </ADXCSENDCOMMAND>
+
+  <ADXMONITOR id="M1" idhash="0xDE6BCA10" title="MONITOR 1">
+    <mainbkgcolor>0x00FFFFFF</mainbkgcolor>
+    <plotbkgcolor>0x00F0F0F0</plotbkgcolor>
+    <plotoutlinecolor>0x00000000</plotoutlinecolor>
+    <titlecolor>0x00000000</titlecolor>
+    <timeaxiscolor>0x00000000</timeaxiscolor>
+    <entrycount>6</entrycount>
+    <ADXMONSERIES linecolor="0x0080FF" axiscolor="0x0080FF" itemidhash="0xCD44515B" />
+    <ADXMONSERIES linecolor="0xFF0000" axiscolor="0xFF0000" itemidhash="0xCD0CD1DB" />
+    <ADXMONSERIES linecolor="0x00FF80" axiscolor="0x00FF80" itemidhash="0xCD7B4C5B" />
+    <ADXMONSERIES linecolor="0x0000FF" axiscolor="0x0000FF" itemidhash="0xCD7B53DB" />
+    <ADXMONSERIES linecolor="0x808040" axiscolor="0x808040" itemidhash="0xA3237619" />
+    <ADXMONSERIES linecolor="0x000000" axiscolor="0x000000" itemidhash="0xA3236CB9" />
+  </ADXMONITOR>
+
+  <ADXVALUE id="TPS" idhash="0xCD44515B" title="TPS">
+    <parentcmdidhash>0x2899B402</parentcmdidhash>
+    <units>%</units>
+    <packetoffset>0x00</packetoffset>
+    <range low="0.000000" high="100.000000" />
+    <alarms low="0.000000" high="255.000000" />
+    <digcount>2</digcount>
+    <outputtype>1</outputtype>
+    <MATH equation="X * 100 / 255">
+      <VAR varID="X" type="native" />
+    </MATH>
+  </ADXVALUE>
+
+  <ADXLISTVIEW id="IL1" idhash="0xCD64DF7B" title="SENSOR DATA">
+    <entrycount>14</entrycount>
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD44515B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD66CE5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD6DE15B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD7B4C5B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD0CD1DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xA3237619" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xC1AB3EDE" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xC1AB3C76" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xA3236CB9" />
+    <ADXLVENTRY entrytype="0" itemidhash="0x35648218" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xC1AB26D6" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD7B53DB" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD12135B" />
+    <ADXLVENTRY entrytype="0" itemidhash="0xCD06CC1B" />
+  </ADXLISTVIEW>
+
+  <ADXMACRO id="TPS MACRO" idhash="0x01F9474D" title="TPS MACRO" repeatcount="1">
+    <NODE commandID="TPS TX" repeatcount="1" />
+    <NODE commandID="TPS RX" repeatcount="1" />
+  </ADXMACRO>
+
+  <ADXCLISTENPACKET id="TPS RX" idhash="0x2899B402" title="TPS RX" flags="0x00000005">
+    <listentimeout>400</listentimeout>
+    <packetbodylength>1</packetbodylength>
+    <packetoffsetinbody>0</packetoffsetinbody>
+    <packetsize>1</packetsize>
+  </ADXCLISTENPACKET>
+
+  <ADXCSENDCOMMAND id="TPS TX" idhash="0x289BF002" title="TPS TX">
+    <bytestring size="0xB">4D30315031315330315231</bytestring>
+  </ADXCSENDCOMMAND>
+</ADXFORMAT>
